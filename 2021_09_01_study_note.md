@@ -1,5 +1,5 @@
 ## 1. React with css classes
-### definition: JSX is used to declare elements in React
+### definition: create the css style in react
 #### App.js
 ```
     import React from "react"
@@ -10,21 +10,20 @@
             <div>
             <header />
             </div>
-        )
-    }
+        )}
     
     export default App
 ```
 #### index.html
 ```
 <html>
-<head>
- <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="title"></div>
-<script src="index.pack.js"></script>
-</body>
+  <head>
+   <link rel="stylesheet" href="style.css">
+  </head>
+ <body>
+  <div id="title"></div>
+  <script src="index.pack.js"></script>
+ </body>
 </html>
 ```
 #### index.js
