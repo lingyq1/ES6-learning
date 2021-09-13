@@ -1,5 +1,5 @@
 ## 1.React parent/child component 
-### definition:
+### definition:Communication between parent and child components
 
 #### index.html
 ```
