@@ -1,6 +1,6 @@
-### 1. React Props and styling practice
+### 1. React state practice
 
-#### definition:setup more complex property of react
+#### definition:how to translate the state in React
 
 #### index.html
 
