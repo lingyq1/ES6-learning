@@ -1,5 +1,5 @@
 ## 1. template literal 
-### definition: like a non-code text
+### definition: like a non-code text 通过模板方便地插入想要的数据信息
 ``` 
 const k = { firstName :"Wang" };
 const b =  `Could you please get ${k.firstName} over here ?`
