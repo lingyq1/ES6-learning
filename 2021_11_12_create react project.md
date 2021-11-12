@@ -152,4 +152,8 @@ export default function Navbar (){
 }
 
 ### 页面效果：
-!alt[react-page](./img/react_page_result.png)
+![alt ](./img/react_page_result.png)
+
+### 疑问：
+  #### 1）react 的logo图片显示不出来；
+  #### 2）index.html文件 链接不了 index.css，以致样式加载不出来，明天再去研究下。
