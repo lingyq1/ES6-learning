@@ -152,7 +152,7 @@ export default function Navbar (){
 }
 
 ### 页面效果：
-![alt ](./img/react_page_result.png)
+![img ](./img/react_page_result.png)
 
 ### 疑问：
   #### 1）react 的logo图片显示不出来；
