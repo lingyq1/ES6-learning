@@ -1,29 +1,36 @@
-### (1)关于昨天做的练习有个编译上的warning：
+# Project3
+
+### (1)关于昨天做的练习有个编译上的 warning
+
 ![warning](./img/compiled_warning.png)
-### 所以在这里要给 数组传个变量：
-```
-const da = [ ];
+
+### 所以在这里要给 数组传个变量
+
+```js
+const da = [];
 export default da;
 ```
-###  (2)今天做第三个项目，做了一部分的页面，其中点击事件不生效，这个明天再看。
+
+### (2)今天做第三个项目，做了一部分的页面，其中点击事件不生效，这个明天再看
+
 ![click_issue.png](./click_issue.png)
 
-### 以下是做的一些项目代码：
+### 以下是做的一些项目代码
 
 ### 1. build an react experience card project
 
 #### index.html
-```
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="test"></div>
-        <script src="index.pack.js"></script>
-    </body>
-</html>
 
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="test"></div>
+    <script src="index.pack.js"></script>
+  </body>
+</html>
 ```
 
 #### index.js
@@ -40,6 +47,7 @@ ReactDOM.render(<App />, document.getElementById("test"))
 #### App.js
 
 ```
+
 import Header from './components/Header';
 import Meme from './components/meme';
 
@@ -56,9 +64,9 @@ export default App;
 
 ```
 
-#### style.css
+/src/component/Card.js
 
-```
+```css
 * {
   box-sizing: border-box;
 }
@@ -72,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
   padding: 20px;
 }
@@ -94,7 +102,7 @@ body {
 
 .form {
   display: grid;
-  grid-template:40px 40px / 1fr 1fr ;
+  grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
   padding: 40px;
 }
@@ -107,21 +115,22 @@ body {
   grid-column: 1/-1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(90.5deg, #711F8D 1.14%, #A818DA 100%);
+  background: linear-gradient(90.5deg, #711f8d 1.14%, #a818da 100%);
   color: white;
-  border:none;
+  border: none;
   cursor: pointer;
 }
 ```
 
 #### Header.js
+
 ```
 import React  from "react"
 import  "../index.css";
 export default function Header () {
    return (
        <header className="header">
-           <img 
+           <img
               src="./project3_logo.png"
               className="header--image"
               alt="g"
@@ -134,11 +143,12 @@ export default function Header () {
 ```
 
 #### meme.js
+
 ```
 import React from "react";
 import memesData from "../memesData";
 export default function Meme (){
- 
+
      let url;
       function getImageUrl(){
      const memesArray = memesData.data.memes;
@@ -146,16 +156,16 @@ export default function Meme (){
         url = memesArray[randomNumber].url;
         console.log(url);
       }
-     
+
     return(
         <main>
             <form className="form">
-                <input 
+                <input
                  type="text"
                  placeholder="Top text"
                  className="form--input"
                 />
-                  <input 
+                  <input
                  type="text"
                  placeholder="Bottom text"
                  className="form--input"
@@ -171,6 +181,7 @@ export default function Meme (){
 ```
 
 #### memesData.js
+
 ```
  const memesData =   {
     "success":"true",
