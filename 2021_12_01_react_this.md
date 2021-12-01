@@ -55,6 +55,9 @@ export default App;
 4. 关于 onClick={this.handler}
 
 > 没手动绑定，会指向 undefined,因为onClick={this.handler}的“调用者”为事件绑定，来源多样，这里打印undefined。
+
 alt[no_bind](./img/no_bind.png)
+
 > 手动绑定的结果：
+
 alt[bind](./img/bind.png)
