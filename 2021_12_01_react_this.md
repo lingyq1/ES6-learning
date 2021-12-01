@@ -48,8 +48,8 @@ export default App;
 
 ## 关于this的指向
 
-1. render()以及componentDIdMount()、componentDIdUpdate()等其他生命周期函数中的this都是组件实例；
-2. this.handler()的调用者，为render（）中的this，所以打印组件实例；
+1. render()以及componentDIdMount()、componentDIdUpdate()等其他生命周期函数中的this都是组件实例 App；
+2. this.handler()的调用者，为render（）中的this，所以打印组件实例 App；
 3. window.handler()的“调用者”，为window，所以打印window；
 
 4. 关于 onClick={this.handler}
