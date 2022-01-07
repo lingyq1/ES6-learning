@@ -4,13 +4,13 @@
 
 ```js
 var obj = {
-  name: "Anzo",
-  gender: "male",
+    name: "Anzo",
+    gender: "male",
 };
 obj.func = function () {
-  console.log("Hi " + obj.name);
+    console.log("Hi " + obj.name);
 };
-obj.func(); // Hi Anzo
+obj.func(); // 报错
 ```
 
 这样会报错 -- 类型“{ name: string; gender: string; }”上不存在属性“func”。
@@ -18,12 +18,12 @@ obj.func(); // Hi Anzo
 
 ```js
 var obj = {
-  name: "Anzo",
-  gender: "male",
-  func: function () {}, //类型模板
+    name: "Anzo",
+    gender: "male",
+    func: function () { }, //类型模板
 };
 obj.func = function () {
-  console.log("Hi " + obj.name);
+    console.log("Hi " + obj.name);
 };
 obj.func(); // 正确，输出 Hi Anzo
 ```
