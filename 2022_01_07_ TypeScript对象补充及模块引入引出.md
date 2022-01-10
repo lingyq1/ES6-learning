@@ -41,7 +41,7 @@ obj.func(); // 正确，输出 Hi Anzo
 console.log("Hello!");console.log("World!");
 ```
 
-#### typeScript 模块
+### typeScript 模块
 导入使用关键字：import
 导出使用关键字：export
 ```js  
