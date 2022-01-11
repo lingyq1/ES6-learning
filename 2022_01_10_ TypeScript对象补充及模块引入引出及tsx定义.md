@@ -74,3 +74,11 @@ ReactDOM.render(
 ```
 
 - 因为 JSX 语法上更接近 JavaScript 而不是 HTML，所以 React DOM 使用 camelCase（小驼峰命名）来定义属性的名称，而不使用 HTML 属性名称的命名约定。
+
+## .TSX文件
+
+> TSX 文件是使用 JSX语法编写的 TypeScript ( .TS ) 文件。它包含的代码很可能是单页或移动应用程序的一部分。TSX 文件可以在任何文本编辑器中打开，但应在源代码编辑器中打开。
+
+JSX，也称为 JavaScript XML，是JavaScript编程语言的扩展。允许我们使用类似于HTML模板的语法来描述React的对象树。它只是一个类似xml的扩展，允许我们编写看起来像标记的JavaScript，并从组件中返回它。
+
+使用 TypeScript 编程语言（JavaScript 的一种变体）的开发人员可以在他们的开发项目中使用 JSX 语法。当他们这样做时，他们将正在进行的加载 JSX 的代码保存为 TSX 文件，然后最终将这些文件转换为.JSX (React JavaScript) 或.JS (JavaScript) 文件。
